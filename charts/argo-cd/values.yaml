@@ -10,3 +10,6 @@ argo-cd:
       type: NodePort
     extraArgs:
       - --insecure
+  configs:
+    cm:
+      timeout.reconciliation: 30s
