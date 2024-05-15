@@ -1,3 +1,4 @@
 **/node_modules
 charts/**/charts
 **/nohup.out
+**/*.pem
