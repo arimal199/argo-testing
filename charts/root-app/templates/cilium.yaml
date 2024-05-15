@@ -12,6 +12,9 @@ spec:
     targetRevision: 1.15.5
     helm:
       values: |
+        bpf:
+            autoMount:
+                enabled: true
         kubeProxyReplacement: "false"
         loadBalancer:
             l7:
