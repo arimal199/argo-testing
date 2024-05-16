@@ -14,7 +14,7 @@ spec:
       values: |
         bpf:
             autoMount:
-                enabled: true
+                enabled: false
         kubeProxyReplacement: "false"
         loadBalancer:
             l7:
