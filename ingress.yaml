@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: basic-ingress
-  namespace: default
+  name: kube-system-ingress
+  namespace: kube-system
 spec:
   ingressClassName: cilium
   rules:
@@ -10,8 +10,8 @@ spec:
       paths:
       - backend:
           service:
-            name: argo-cd-argocd-server
+            name: hubble-ui
             port:
-              number: 443
-        path: /argo
+              number: 80
+        path: /hubble
         pathType: Prefix
